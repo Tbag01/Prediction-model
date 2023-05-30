@@ -14,7 +14,7 @@ lr_loaded = pickle.load(open('C:/Users/DELL/Desktop/School Work/Part 4.2/Dissert
 #num_cols = ['age_of_license', 'speed', 'distance', 'time_spent_driving', 'number_of_previous_claims', 'time_of_last_claim', 'car_model_year', 'age']
 input_data = (10, 180, 300, 6, 3, 5, 1, 26)
 
-input_data_reshaped = np.array([10, 180, 300, 6, 3, 5, 1, 26]).reshape(1, -1)
+input_data_reshaped = np.array(input_data).reshape(1, -1)
 
 prediction = lr_loaded.predict(input_data_reshaped)
 
